@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Oxygen', sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: whitesmoke;
+}
+
+.centered {
+	margin: 3rem auto;
+	text-align: center;
+}
+
+.container {
+	margin: 5rem;
+}
+
+.numpad {
+	width: 75%;
+	height: auto;
+}
+
+.btn-secondary {
+	height: 60px;
+	padding: 10px;
+}
+
+.output {
+	background-color: rgba(0, 0, 0, 0.457);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 0.75rem;
+	word-wrap: break-word;
+	word-break: break-all;
+	margin-right: 75px;
+}
+
+.output .previousInput {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 1rem;
+}
+
+.output .currentInput {
+	color: white;
+	font-size: 2rem;
+}
