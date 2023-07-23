@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = (props) => {
 	return (
-		<button className={props.className} type="button">
+		<button onClick={props.onClick} className={props.className} type="button">
 			{props.children}
 		</button>
 	);
