@@ -4,7 +4,7 @@ import Numberpad from './components/Numberpad';
 import ResultContext from './context/context';
 
 function App() {
-	const [count, setCount] = useState('');
+	const [count, setCount] = useState([]);
 	const [result, setResult] = useState('');
 
 	return (

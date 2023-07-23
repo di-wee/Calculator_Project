@@ -5,15 +5,14 @@ import ResultContext from '../context/context';
 const Numberpad = () => {
 	const resultCtx = useContext(ResultContext);
 	const { count, setCount, result, setResult } = resultCtx;
-	const toString = count.toString().replaceAll(',', '');
 
 	const handleOnClick = (event) => {
 		const digit = event.target.innerHTML;
-		setCount((count) => [...count, digit]);
+		setCount((count) => count + digit);
 	};
 
 	const handleCalculation = () => {
-		setResult(eval(toString));
+		setResult(eval(count));
 	};
 
 	const handleClearVal = () => {
@@ -22,12 +21,11 @@ const Numberpad = () => {
 	};
 
 	const handleAddNegPos = () => {
-		setCount(eval(toString) * -1);
+		setCount(eval(count) * -1);
 	};
 
 	const handlePercentage = (event) => {
-		const digit = event.target.innerHTML;
-		setCount((count) => [...count, digit]);
+		setCount(eval(count) / 100);
 	};
 
 	return (
